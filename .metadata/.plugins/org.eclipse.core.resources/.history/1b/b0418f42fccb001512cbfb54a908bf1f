@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student bob = new Student("Bob", "de Vries", 7);
+		Student hester = new Student("Hester", "Huijsdens", 4480562);
+		Student vivian = new Student("Vivian", "Vriezekolk", 4482921);
+		
+		Groep groep = new Groep(3);
+		
+		System.out.println("De student: " + bob);
+		bob.setNaam("Bob" , "De Bouwer") ;
+		
+		System.out.println("De student: " + bob);
+		
+		groep.voegToe(hester);
+		System.out.println(groep);
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+public class Groep {
+	private int aantal;
+	Student[] studenten;
+
+	public Groep() {
+
+	}
+
+	public Groep(int aantal) {
+		this.aantal = aantal;
+		studenten = new Student[aantal]; // dit weet ik niet zeker hoor, waar we
+											// dit object aan moeten maken..
+
+	}
+
+	public boolean voegToe(Student s) {
+		if (studenten.length == aantal) {
+			return false;
+		} else {
+			studenten[studenten.length+1] = s;
+			return true;
+		}
+	}
+}
