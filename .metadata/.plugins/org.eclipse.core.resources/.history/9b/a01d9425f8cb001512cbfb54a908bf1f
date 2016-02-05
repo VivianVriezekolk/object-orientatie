@@ -8,13 +8,13 @@ public class Student {
 		this.studentNummer = studentNummer;
 	}
 	
-	public void setNaam(String voor, String achter) {
+	public void setNaam(String voor, String achter){
 		this.voor = voor;
 		this.achter = achter;
 	}
 	
-	public String toString() {
-		return voor + " " + achter + "  s" + studentNummer;
+	public String toString(){
+		return voor + " " + achter;
 		
 	}
 
